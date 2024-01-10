@@ -1,0 +1,376 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour l'en-tête de type ligne de commande */
+.terminal-header {
+    background-color: #000;
+    padding: 10px;
+    border-bottom: 1px solid #00ff00;
+    text-align: center; /* Pour centrer les éléments dans l'en-tête */
+}
+
+.terminal-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Pour centrer les liens de la navigation */
+}
+
+.terminal-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.terminal-nav li a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+.terminal-nav li a:hover {
+    color: #fff;
+    border-bottom: 1px solid #00ff00;
+}
+
+/* Styles pour les sections de type ligne de commande */
+.terminal-section {
+    margin: 20px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Centrer les titres des sections */
+.terminal-section-header {
+    color: #00ff00;
+    text-align: center; /* Pour centrer le texte */
+    display: block; /* Pour forcer le centrage */
+    margin: 0 auto; /* Pour centrer horizontalement */
+    width: fit-content; /* Ajuster la largeur au contenu */
+    margin-top: 10px; /* Espacement en haut */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+.terminal-section-body {
+    color: #fff;
+}
+
+/* Styles pour le footer */
+.terminal-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* ... Autres styles ... */
+
+/* Styles pour la section Accueil */
+#accueil {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111; /* Changer la couleur de fond au besoin */
+}
+
+.accueil-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile {
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile:hover {
+    transform: translateY(-10px);
+}
+
+.profile-image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.profile-image:hover img {
+    opacity: 0;
+}
+
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+    width: 200px; /* Ajuste la largeur selon ce qui convient pour une ou deux lignes */
+    text-align: center; /* Centre le texte dans la description */
+    white-space: normal; /* Permet au texte de passer à la ligne */
+    text-overflow: initial; /* Annule l'ajout des points de suspension */
+}
+
+
+
+.profile-image:hover .description {
+    opacity: 1;
+}
+
+/* ... Autres styles ... */
+
+/* Styles pour la section Compétences */
+#competences {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111; /* Changer la couleur de fond au besoin */
+}
+
+.accueil-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile {
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h3 {
+    color: #00ff00;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills ul li {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.skills ul li i {
+    margin-right: 5px;
+}
+
+/* ... Styles précédents ... */
+
+.accueil-container {
+    display: flex;
+    justify-content: space-between;
+    /* Autres styles pour l'alignement et la présentation */
+}
+
+.profile {
+    width: 45%;
+    /* Autres styles pour la présentation des profils */
+}
+
+.portfolio-item {
+    width: 100%;
+    margin-bottom: 20px;
+    /* Autres styles pour la présentation des éléments du portfolio */
+}
+
+.portfolio-item img {
+    width: 100%;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    /* Autres styles pour l'image du projet */
+}
+
+.portfolio-item-description {
+    padding: 10px;
+    background-color: #111;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    /* Autres styles pour la description du projet */
+}
+
+.portfolio-item-description h4 {
+    margin-bottom: 5px;
+    /* Autres styles pour le titre du projet */
+}
+
+/* Style du bouton pour accéder à la calculatrice */
+.calculator-button {
+    padding: 10px 20px;
+    background-color: #1E1E1E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espacement vers le bas pour éviter de cacher le contenu */
+    text-decoration: none; /* Supprimer le soulignement */
+    display: inline-block; /* Affichage en ligne pour éviter le blocage */
+}
+
+.calculator-button:hover {
+    background-color: #555;
+}
+
+.notes-button {
+    padding: 10px 20px;
+    background-color: #1E1E1E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espacement vers le bas pour éviter de cacher le contenu */
+    text-decoration: none; /* Supprimer le soulignement */
+    display: inline-block; /* Affichage en ligne pour éviter le blocage */
+}
+
+.notes-button:hover {
+    background-color: #555;
+}
+
+.chess-button {
+    padding: 10px 20px;
+    background-color: #1E1E1E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espacement vers le bas pour éviter de cacher le contenu */
+    text-decoration: none; /* Supprimer le soulignement */
+    display: inline-block; /* Affichage en ligne pour éviter le blocage */
+}
+
+.chess-button:hover {
+    background-color: #555;
+}
+
+.morpion-button {
+    padding: 10px 20px;
+    background-color: #1E1E1E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Espacement vers le bas pour éviter de cacher le contenu */
+    text-decoration: none; /* Supprimer le soulignement */
+    display: inline-block; /* Affichage en ligne pour éviter le blocage */
+}
+
+.morpion-button:hover {
+    background-color: #555;
+}
+
+/* Exemple de styles pour le formulaire dans le thème d'une ligne de commandes */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+.contact-form label {
+    color: #00FF00; /* Couleur du texte */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form input[type="submit"] {
+    background-color: #000000; /* Couleur de fond */
+    color: #00FF00; /* Couleur du texte */
+    border: 1px solid #00FF00;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.contact-form input[type="submit"] {
+    cursor: pointer;
+    background-color: #00FF00; /* Couleur de fond pour le bouton Envoyer */
+    color: #000000; /* Couleur du texte pour le bouton Envoyer */
+}
+
+#infos-contact {
+    text-align: right;
+    padding-right: 20px; /* Espace à droite du formulaire */
+}
+
+.contact-info {
+    margin-bottom: 20px; /* Espacement entre les informations de contact */
+    font-family: 'Courier New', monospace;
+    color: #00FF00; /* Couleur du texte */
+}
+
+.contact-info h3 {
+    font-size: 18px; /* Taille de la police pour les noms */
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px; /* Taille de la police pour les informations */
+}
+
+.contact-section {
+    margin-top: 40px; /* Ajoute de l'espace en haut de la section contact */
+}
+
+.contact-form {
+    margin-bottom: 20px; /* Espace en dessous du formulaire */
+}
+
+.contact-info {
+    margin-top: 20px; /* Espace au-dessus des informations de contact */
+}
+
+.contact-info p {
+    margin-bottom: 10px; /* Espace entre chaque paragraphe d'information */
+}

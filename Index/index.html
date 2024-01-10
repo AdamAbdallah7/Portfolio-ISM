@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Adam et Enzo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="terminal-header">
+        <nav>
+            <ul class="terminal-nav">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="terminal-section">
+        <div class="accueil-container">
+            <div class="profile" id="vous">
+                <h2>ABDALLAH Adam</h2>
+                <div class="profile-image" id="vous-image">
+                    <img src="Images/Adam.jpg" alt="Votre Photo">
+                    <p class="description">Étudiant en Génie Logiciel - Réseaux et Systèmes à l'ISM.</p>
+                </div>
+            </div>
+            <div class="profile" id="ami">
+                <h2>BASMA Enzo Assad</h2>
+                <div class="profile-image" id="ami-image">
+                    <img src="Images/Enzo.jpg" alt="Photo de votre binôme">
+                    <p class="description">Étudiant en Génie Logiciel - Réseaux et Systèmes à l'ISM.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="competences" class="terminal-section">
+        <div class="accueil-container">
+            <div class="profile" id="vous">
+                <h2>ABDALLAH Adam</h2>
+                <div class="skills">
+                    <h3>Langages de Programmation</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>Compétences Humaines</h3>
+                    <ul>
+                        <li>Esprit d'équipe</li>
+                        <li>Communication efficace</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile" id="ami">
+                <h2>BASMA Enzo Assad</h2>
+                <div class="skills">
+                    <h3>Langages de Programmation</h3>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>Compétences Humaines</h3>
+                    <ul>
+                        <li>Leadership</li>
+                        <li>Résolution de problèmes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="terminal-section">
+        <div class="accueil-container">
+            <div class="profile" id="projets-solo">
+                <h3>PROJETS SOLO</h3>
+                <div class="portfolio-item">
+                    <div class="portfolio-item-description">
+                        <h4>Calculatrice en ligne | ABDALLAH Adam</h4>
+                        <p>Une calculatrice permettant des opérations mathématiques de base.</p>
+                        <a href="calculator/calculator.html" class="calculator-button">Ouvrir la calculatrice</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-item-description">
+                        <h4>Notes en ligne | BASMA Enzo Assad</h4>
+                        <p>Une application de prise de notes en ligne, avec la possibilité d'enregistrer ses notes.</p>
+                        <a href="notes/notes.html" class="notes-button">Ouvrir Notes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile" id="projets-binome">
+                <h3>PROJETS DUO</h3>
+                <div class="portfolio-item">
+                    <div class="portfolio-item-description">
+                        <h4>Jeu d'Échecs</h4>
+                        <p>Un jeu d'échecs interactif avec toutes les règles de déplacement des pièces.</p>
+                        <a href="chess/chess.html" class="chess-button">Ouvrir le jeu d'Échecs</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-item-description">
+                        <h4>Jeu du morpion (Tic-Tac-Toe)</h4>
+                        <p>Un jeu simple de x/o (morpion) avec la logique du jeu et la détection des gagnants.</p>
+                        <a href="morpion/tictactoe.html" class="morpion-button">Ouvrir le jeu du morpion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="terminal-section">
+        <div class="accueil-container">
+            <div class="profile" id="vous">
+                <h2>Formulaire de Contact</h2>
+                <form class="contact-form">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+            <div class="profile" id="infos-contact">
+                <h2>Contactez nous</h2>
+                <div class="contact-info">
+                    <h3>ABDALLAH Adam</h3>
+                    <p>Téléphone: +221 77 721 1656</p>
+                    <p>Email: adam.abdallah@ism.edu.sn</p>
+                    <p>Instagram : @adamabdallahhh</p>
+                </div>
+                <div class="contact-info">
+                    <h3>BASMA Enzo Assad</h3>
+                    <p>Téléphone: +221 77 255 5550</p>
+                    <p>Email: enzo.basma@ism.edu.sn</p>
+                    <p>Instagram : @_enzobas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="terminal-footer">
+        <p>&copy; Adam ABDALLAH, Enzo Assad BASMA - ISM 2023/2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
